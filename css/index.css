@@ -130,7 +130,145 @@ table {
 * {
   box-sizing: border-box;
 }
+@variable-font-size : font-size: 1.85rem;
 html,
 body {
   height: 100%;
+  font-size: 62.5%;
+}
+html nav,
+body nav {
+  display: flex;
+  justify-content: flex-end;
+}
+html a,
+body a {
+  margin: 15px;
+  font-size: 2rem;
+}
+html .topContent,
+body .topContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 90%;
+  max-height: 60%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+  background-color: lightgray;
+}
+html .topContent img,
+body .topContent img {
+  margin-left: 5%;
+  padding-top: 2%;
+}
+html .topContent .sideGigs,
+body .topContent .sideGigs {
+  font-size: 1.85rem;
+  margin-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+html .topContent button,
+body .topContent button {
+  font-size: 2rem;
+  margin-left: 5%;
+  margin-bottom: 4%;
+}
+html h1,
+body h1 {
+  font-size: 5rem;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+html h2,
+body h2 {
+  font-size: 4rem;
+  padding-bottom: 2%;
+}
+html h3,
+body h3 {
+  font-size: 3rem;
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 90%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid black;
+}
+html .bottomContent,
+body .bottomContent {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+html .bottomContent .aboutMe,
+body .bottomContent .aboutMe {
+  max-width: 40%;
+  margin-left: 5%;
+}
+html .bottomContent .Skills,
+body .bottomContent .Skills {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 40%;
+  margin-left: 10%;
+  margin-right: 18%;
+}
+html .bottomContent .workHistory,
+body .bottomContent .workHistory {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding-bottom: 2%;
+  flex-grow: 1;
+  margin-left: 3%;
+}
+html p,
+body p {
+  font-size: 1.85rem;
+}
+html .skill,
+body .skill {
+  border: 1px solid black;
+  padding: 4%;
+}
+html table,
+body table {
+  max-width: 90%;
+  align-self: center;
+  border: 1px solid black;
+}
+html th,
+body th,
+html td,
+body td {
+  font-size: 1.85rem;
+  font-weight: normal;
+  text-align: center;
+  padding: 1.5%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+html th,
+body th {
+  font-size: 2rem;
+  font-weight: bold;
+}
+html footer,
+body footer {
+  max-width: 90%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  background-color: gray;
+  border: 1px solid black;
+}
+html .copyright,
+body .copyright {
+  font-size: 1.5rem;
 }
