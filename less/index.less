@@ -53,12 +53,16 @@ table {
     box-sizing: border-box;
 }
 
-// @variable-font-size: font-size: 1.85rem;
+//variables
+@main-font-size: 1.85rem;
+
+//
 
 html, body {
 	height: 100%;
 	font-size: 62.5%;
 	max-width: 1000px;
+	margin: auto;
 	nav {
 		display: flex;
 		justify-content: flex-end;
@@ -74,7 +78,7 @@ html, body {
 		flex-direction: column;
 		align-items: flex-start;
 		max-width: 90%;
-		max-height: 60%;
+		height: 500px;
 		margin-left: 5%;
 		margin-right: 5%;
 		margin-bottom: 2%;
@@ -86,7 +90,7 @@ html, body {
 		}
 	
 		.sideGigs {
-			font-size: 1.85rem;
+			font-size: @main-font-size;
 			margin-left: 5%;
 			padding-top: 2%;
 			padding-bottom: 2%;
@@ -96,6 +100,21 @@ html, body {
 			font-size: 2rem;
 			margin-left: 5%;
 			margin-bottom: 4%;
+		}
+
+		@media( max-width: 500px) {
+			img {
+				align-self: center;
+			}
+
+			button {
+				align-self: center;
+				margin-top: 3%;
+			}
+
+			h1 {
+
+			}
 		}
 	}
 	
@@ -128,6 +147,7 @@ html, body {
 		flex-wrap: wrap;
 		margin-left: 5%;
 		margin-right: 5%;
+		margin-bottom: 5%;
 		.aboutMe {
 			max-width: 40%;
 			margin-left: 5%;
@@ -147,11 +167,53 @@ html, body {
 			padding-bottom: 2%;
 			flex-grow: 1;
 			margin-left: 3%;
+			margin-top: 2%;
+		}
+
+		@media ( max-width: 500px) {
+			.bottomContent {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.aboutMe {
+				max-width: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-bottom: 5%;
+			}
+
+			.Skills {
+				max-width: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-bottom: 5%;
+			}
+
+			.skill {
+				width: 150px;
+			}
+
+			.workHistory {
+				max-width: 90%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-bottom: 5%;
+			}
+
+			table, th, td {
+				border: 1px solid black;
+				padding: 5px;
+			  }
 		}
 	}
 	
 	p {
-		font-size: 1.85rem;
+		font-size: @main-font-size;
 	}
 	
 	
@@ -171,7 +233,7 @@ html, body {
 	}
 	
 	th, td {
-		font-size: 1.85rem;
+		font-size: @main-font-size;
 		font-weight: normal;
 		text-align: center;
 		padding: 1.5%;
@@ -189,7 +251,7 @@ html, body {
 		margin-left: 5%;
 		display: flex;
 		justify-content: center;
-		padding-top: 5%;
+		padding-top: 3%;
 		padding-bottom: 2%;
 		background-color: gray;
 		border: 1px solid black;
