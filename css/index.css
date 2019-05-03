@@ -1,1 +1,333 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+  max-width: 1000px;
+  margin: auto;
+}
+html nav,
+body nav {
+  display: flex;
+  justify-content: flex-end;
+}
+html a,
+body a {
+  margin: 15px;
+  font-size: 2rem;
+}
+html .topContent,
+body .topContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 90%;
+  height: 500px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+  background-color: lightgray;
+}
+html .topContent img,
+body .topContent img {
+  margin-left: 5%;
+  padding-top: 2%;
+}
+html .topContent .sideGigs,
+body .topContent .sideGigs {
+  font-size: 1.85rem;
+  margin-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+html .topContent button,
+body .topContent button {
+  font-size: 2rem;
+  margin-left: 5%;
+  margin-bottom: 4%;
+}
+@media (max-width: 500px) {
+  html .topContent img,
+  body .topContent img {
+    align-self: center;
+  }
+  html .topContent button,
+  body .topContent button {
+    align-self: center;
+    margin-top: 3%;
+  }
+}
+html h1,
+body h1 {
+  font-size: 5rem;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+html h2,
+body h2 {
+  font-size: 4rem;
+  padding-bottom: 2%;
+}
+html h3,
+body h3 {
+  font-size: 3rem;
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 90%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid black;
+}
+html .bottomContent,
+body .bottomContent {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+html .bottomContent .aboutMe,
+body .bottomContent .aboutMe {
+  max-width: 40%;
+  margin-left: 5%;
+}
+html .bottomContent .Skills,
+body .bottomContent .Skills {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 40%;
+  margin-left: 10%;
+  margin-right: 18%;
+}
+html .bottomContent .workHistory,
+body .bottomContent .workHistory {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding-bottom: 2%;
+  flex-grow: 1;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+@media (max-width: 500px) {
+  html .bottomContent .bottomContent,
+  body .bottomContent .bottomContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  html .bottomContent .aboutMe,
+  body .bottomContent .aboutMe {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+  html .bottomContent .Skills,
+  body .bottomContent .Skills {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+  html .bottomContent .skill,
+  body .bottomContent .skill {
+    width: 150px;
+  }
+  html .bottomContent .workHistory,
+  body .bottomContent .workHistory {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+  html .bottomContent table,
+  body .bottomContent table,
+  html .bottomContent th,
+  body .bottomContent th,
+  html .bottomContent td,
+  body .bottomContent td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+}
+html p,
+body p {
+  font-size: 1.85rem;
+}
+html .skill,
+body .skill {
+  border: 1px solid black;
+  padding: 4%;
+}
+html table,
+body table {
+  max-width: 90%;
+  align-self: center;
+  border: 1px solid black;
+}
+html th,
+body th,
+html td,
+body td {
+  font-size: 1.85rem;
+  font-weight: normal;
+  text-align: center;
+  padding: 1.5%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+html th,
+body th {
+  font-size: 2rem;
+  font-weight: bold;
+}
+html footer,
+body footer {
+  max-width: 90%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  background-color: gray;
+  border: 1px solid black;
+}
+html .copyright,
+body .copyright {
+  font-size: 1.5rem;
+}
